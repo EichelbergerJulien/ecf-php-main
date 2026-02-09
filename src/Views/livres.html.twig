@@ -1,0 +1,22 @@
+{% extends layout.html.twig %}
+
+{% block title %}
+   Livres 
+{% endblock %}
+
+{% block main %}
+<main> 
+    <table>
+        <tr>
+            <th>
+                Livres
+            </th>
+        </tr>
+        {% for livre in livres %}
+        <tr>
+            <td>{{ livre.titre }} {{ livre.nom }} {{ livre.prenom }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</main>
+{% endblock %}

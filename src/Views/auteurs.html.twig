@@ -1,0 +1,24 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}
+Auteurs
+{% endblock title %}
+
+
+
+{% block main %}
+<main>
+    <table>
+        <tr>
+            <th>
+                Auteurs
+            </th>
+        </tr>
+        {% for auteur in auteurs %}
+        <tr>
+            <td>{{ auteur.prenom }} {{ auteur.nom }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</main>
+{% endblock %}
