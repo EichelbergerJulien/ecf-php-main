@@ -1,22 +1,64 @@
-{% extends layout.html.twig %}
+{% extends "layout.html.twig" %}
 
 {% block title %}
-   Livres 
+Livres
 {% endblock %}
 
 {% block main %}
-<main> 
-    <table>
+<main>
+    <table class="table">
         <tr>
-            <th>
-                Livres
+            <th scope="col">
+                <h2>
+                    Livres
+                </h2>
             </th>
         </tr>
         {% for livre in livres %}
         <tr>
-            <td>{{ livre.titre }} {{ livre.nom }} {{ livre.prenom }}</td>
+            <td class="">{{ livre.titre }} de {{ livre.nom }} {{ livre.prenom }}
+                <button class="btn btn-danger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                    </svg>
+                </button>
+                <a class="btn btn-info" href="">Consulter</a>
+                <a class="btn btn-success" href="">Ajouter</a>
+                <a class="btn btn-secondary" href="">Modifier</a>
+                <a class="btn btn-danger" href="">Supprimer</a>
+            </td>
         </tr>
         {% endfor %}
     </table>
 </main>
+{% endblock %}
+
+
+{% block footer %}
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item"><a class="page-link" href="#">6</a></li>
+        <li class="page-item"><a class="page-link" href="#">7</a></li>
+        <li class="page-item"><a class="page-link" href="#">8</a></li>
+        <li class="page-item"><a class="page-link" href="#">9</a></li>
+        <li class="page-item"><a class="page-link" href="#">10</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
 {% endblock %}

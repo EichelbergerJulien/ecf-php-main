@@ -537,3 +537,6 @@ CREATE TABLE IF NOT EXISTS users (
 INSERT INTO users (username, password, role) VALUES
 ('user', '$2y$12$E9xDtxReNqMVcSUSxJV1EeS6mOr7IwddlVJE8YS.1PbDHW9A.vAoK', 'user'),
 ('admin', '$2y$12$AliruQUzELaMmPcmvbBY7efzLAPyCGlYfE/iMaNJOlHnO.NbMuRsy', 'admin');
+
+
+

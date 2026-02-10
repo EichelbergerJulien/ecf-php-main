@@ -1,8 +1,8 @@
 {
-    "name": "utilisateur/ecf_php2",
+    "name": "utilisateur/ecf-php-main",
     "authors": [
         {
-            "name": "moi"
+            "name": "Moi"
         }
     ],
     "autoload": {

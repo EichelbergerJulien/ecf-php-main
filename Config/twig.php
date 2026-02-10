@@ -8,7 +8,7 @@ use Twig\Loader\FilesystemLoader;
 
 require_once __DIR__ . DIRECTORY_SEPARATOR . "RouterExtension.php";
 
-$loader = new FilesystemLoader("../src/Views");
+$loader = new FilesystemLoader("../src/Views/");
 $twig = new Environment($loader, [
     'debug' => true
 ]);
