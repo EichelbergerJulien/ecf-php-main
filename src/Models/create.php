@@ -1,6 +1,6 @@
 <?php
 
-require 'db.php'; 
+include_once dirname(__DIR__) . '/Models/Database.php'; 
 
 if (!empty($_POST)) {
     $sql = "INSERT INTO livres (titre, auteur_id categorie_id, annee_publication

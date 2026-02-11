@@ -1,6 +1,6 @@
 <?php
 
-require 'db.php';
+include_once dirname(__DIR__) . '/Models/Database.php';
 
 $sql = "SELECT livres.id, livres.titre, livres.annee, 
                auteurs.nom AS auteur,

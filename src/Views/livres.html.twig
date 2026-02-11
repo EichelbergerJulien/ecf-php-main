@@ -6,7 +6,7 @@ Livres
 
 {% block main %}
 <main>
-    <table class="table">
+    <table class="table table-secondary table-striped">
         <tr>
             <th scope="col">
                 <h2>
@@ -17,17 +17,20 @@ Livres
         {% for livre in livres %}
         <tr>
             <td class="">{{ livre.titre }} de {{ livre.nom }} {{ livre.prenom }}
-                <button class="btn btn-danger">
+                <button class="btn btn-outline-danger">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-heart-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                             d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
                     </svg>
+                    <div class="post" data-id="1">
+                        <span class="like-count">0</span>
+                    </div>
                 </button>
-                <a class="btn btn-info" href="">Consulter</a>
-                <a class="btn btn-success" href="">Ajouter</a>
-                <a class="btn btn-secondary" href="">Modifier</a>
-                <a class="btn btn-danger" href="">Supprimer</a>
+                <a class="btn btn-outline-info" href="">Consulter</a>
+                <a class="btn btn-outline-success" href="">Ajouter</a>
+                <a class="btn btn-outline-secondary" href="">Modifier</a>
+                <a class="btn btn-outline-danger" href="">Supprimer</a>
             </td>
         </tr>
         {% endfor %}
@@ -38,7 +41,7 @@ Livres
 
 {% block footer %}
 <nav aria-label="Page navigation example">
-    <ul class="pagination">
+    <ul class="pagination text-center">
         <li class="page-item">
             <a class="page-link" href="#" aria-label="Previous">
                 <span aria-hidden="true">&laquo;</span>

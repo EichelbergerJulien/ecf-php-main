@@ -13,6 +13,7 @@
     "require": {
         "altorouter/altorouter": "^2.0",
         "symfony/var-dumper": "^8.0",
-        "twig/twig": "^3.23"
+        "twig/twig": "^3.23",
+        "symfony/security-bundle": "*"
     }
 }

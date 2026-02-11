@@ -1,6 +1,6 @@
 <?php
 
-require 'db.php';
+include_once dirname(__DIR__) . '/Models/Database.php';
 
 $id = $_GET['id'];
 $stmt = $pdo->prepare("DELETE FROM livres WHERE id = ? ");
